@@ -1,0 +1,323 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+/* End of Reset */
+
+/* General Rules */
+a {
+  text-decoration: none;
+}
+
+/* Container */
+.container {
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* Top Menu */
+nav {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 5em;
+  border-bottom: 2px solid #380404;
+  position: fixed;
+}
+
+nav .logo {
+  margin-top: 1.375em;
+}
+
+.menu {
+  float: right;
+  margin-top: 1.875em;
+}
+
+.menu li {
+  display: inline;
+  font-family: 'Signika', sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.4;
+  color: #242424;
+}
+
+.menu span {
+  margin: 0 0.125em;
+  color: #380404;
+}
+
+.menu li:hover {
+  color: #380404;
+}
+
+/* About Me */
+section {
+  padding: 1.875em 0;
+}
+section h1 {
+  font-size: 4rem;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #eaeaea 0%, #380404 100%);
+    -webkit-background-clip: text;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Signika', sans-serif;
+}
+
+section hr {
+  border: 1px solid #380404;
+  background-color: #380404;
+  max-width: 3.75em;
+  margin: 2.5em auto;
+}
+
+#about-me {
+  padding-top: 8.75em;
+}
+
+#about-me img {
+  max-width: 32%;
+}
+
+#about-me h2 {
+  font-family: 'Signika', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.625em;
+  max-width: 64%;
+  float: right;
+}
+
+/* Portfolio */
+
+.portfolio-work {
+  max-width: 33%;
+  display: inline-block;
+  text-align: center;
+}
+
+.portfolio-work img {
+  max-width: 18.75em;
+  padding: 0.625em;
+}
+
+.portfolio-work h3 {
+  font-family: 'Signika', sans-serif;
+  font-size: 1.25em;
+  color: #242424;
+  margin: 1.25em 0;
+}
+
+.portfolio-work button {
+  background-color: #380404;
+  border: 1px solid #380404;
+  font-family: 'Signika', sans-serif;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #eaeaea;
+  padding: 0.9em 1.25em;
+  -webkit-border-radius: 0.625em;
+  -moz-border-radius:    0.625em;
+  border-radius:         0.625em;
+  cursor: pointer;
+}
+
+.portfolio-work button:hover {
+  background-color: #242424;
+  border: 1px solid #242424;
+}
+
+/* Social */
+
+.social {
+  text-align: center;
+}
+
+.social li {
+  margin: 0 0.3125em;
+  display: inline-block;
+}
+
+.facebook {
+  background: url("../img/facebook.png");
+  width: 100px;
+  height: 100px;
+}
+
+.facebook:hover {
+  background: url("../img/facebook-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+.twitter {
+  background: url("../img/twitter.png");
+  width: 100px;
+  height: 100px;
+}
+
+.twitter:hover {
+  background: url("../img/twitter-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+.linkedin {
+  background: url("../img/linkedin.png");
+  width: 100px;
+  height: 100px;
+}
+
+.linkedin:hover {
+  background: url("../img/linkedin-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+.github {
+  background: url("../img/github.png");
+  width: 100px;
+  height: 100px;
+}
+
+.github:hover {
+  background: url("../img/github-hover.png");
+  width: 100px;
+  height: 100px;
+}
+
+i.fa {
+  font-size: 2rem;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: space-evenly;
+}
+.social-icons a{
+  color: #380404;
+}
+
+.social-icons a:hover{
+   -webkit-transform: scale(1.4);
+   color: #643dab
+}
+
+h3 {
+  color: #380404;
+}
+
+
+/* Footer */
+
+footer {
+  padding-bottom: 3.75em;
+  font-family: 'Signika', sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  text-align: center;
+  color: '#8b0000';
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  #about-me {
+      text-align: center;
+  }
+  #about-me h2 {
+      line-height: 1.625em;
+      max-width: 50%;
+      float: none;
+      margin: 1.25em auto 0 auto;
+  }
+
+  #portfolio {
+      text-align: center;
+  }
+
+  #portfolio .portfolio-work:last-child {
+      margin-bottom: 0;
+  }
+
+  .portfolio-work {
+    max-width: 50%;
+    margin: 0 0 1.875em 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  nav {
+    text-align: center;
+  }
+
+  nav .logo {
+    max-width: 10.9375em;
+    margin-top: 1em;
+  }
+
+  .menu {
+    float: none;
+    margin-top: 0.4em;
+    text-align: center;
+  }
+
+  .menu li {
+    font-size: 0.875em;
+  }
+
+  section h1 {
+    font-size: 1.875em;
+  }
+
+  #about-me h2 {
+    line-height: 1.5em;
+    max-width: 90%;
+    font-size: 0.875em;
+  }
+
+  .portfolio-work {
+    max-width: 100%
+  }
+
+  .portfolio-work h3 {
+    font-size: 1em;
+  }
+}
