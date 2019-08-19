@@ -12,89 +12,45 @@
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous">
   </script>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script>
-  $(document).ready(function() {
-  //Preloader
-    $('.portfolio').hide()
-    console.log("faf")
-    $(window).on("load", function() {
-      preloaderFadeOutTime = 10000;
-      function hidePreloader() {
-          var preloader = $('.loader');
-          console.log("here")
-          $('.portfolio').show()
-          preloader.fadeOut(preloaderFadeOutTime);
-      }
-    hidePreloader();
-    });
-  });
-</script>
+ <script src='index.js'></script>
+ <link href="https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap" rel="stylesheet">
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
-  <div class="loader">
-    helloooo
+  <div>
+    <section id="loader">
+      <div><p>Welcome</p></div>
+    </section>
   </div>
-  <div class="portfolio">
-    <nav>
-      <div class="container">
-        <ul class="menu">
-          <a href="#about-me"><li>About Me&nbsp;<span class="bar"></span></li></a>
-          <a href="#portfolio"><li>Portfolio&nbsp;<span class="bar"></span></li></a>
-          <a href="#social"><li>Contact</li></a>
-        </ul>
-      </div>
-    </nav>
+  <div id="portfolio">
     <div class="container">
-      <section id="about-me">
-        <div class="content">
-          <h1 class="content-title">About Me</h1>
-          <hr>
-          <img src="http://placehold.it/300x300">
-          <h2>Hi, I am Farhan, an engineer located at Lucknow, India, having 2+ years experience developing software in a fast-paced, startup like environment, skilled in Ruby on Rails, ReactJS, ReactNative, Redux, GIT, Heroku Cloud, Linux, Agile.
-          At Akaruilabs, I'm currently working on real-estate market application with Ruby on Rails and ReactJS technologies.
-          In my free time I try to learn something, contribute to open source and listen mind relaxing music.</h2>
-        </div>
-      </section>
-      <section id="portfolio">
-        <h1 class="content-title">Portfolio</h1>
-        <hr>
-        <div class="portfolio-work">
-          <img src="./../img/mayhemV2.png">
-          <h3 class="project-title">Music Mayhem</h3>
-        </div>
-        <div class="portfolio-work">
-          <img src="./../img/mayhemV2.png">
-          <h3 class="project-title">Zeehaus</h3>
-        </div>
-        <div class="portfolio-work">
-          <img src="./../img/mayhemV2.png">
-          <h3 class="project-title">Caelum Id</h3>
-        </div>
-      </section>
-      <section id="social">
-        <h1 class="content-title">Contact</h1>
-        <hr>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/ffarhhan" title="Facebook">
-            <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-          <a href="https://twitter.com/ffarhhan" title="Twitter">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/mohammad-farhan-8b7230115/" title="Linkedin">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/ffarhhan/" title="Instagram">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-          <a href="https://github.com/ffarhhan/" title="Github">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
+      <section>
+        <div id='first-page'>
+          <h1>Hi, I'm Farhan<br/>Nice to meet you.</h1>
         </div>
       </section>
       <footer>
-        <span>Mohammad Farhan&nbsp;2019</span>
+        <section id="social">
+          <hr>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ffarhhan" title="Facebook">
+              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/ffarhhan" title="Twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mohammad-farhan-8b7230115/" title="Linkedin">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/ffarhhan/" title="Instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/ffarhhan/" title="Github">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
+        </section>
+        <span>&copy;2019 MF</span>
       </footer>
     </div>
   </div>
